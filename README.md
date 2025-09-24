@@ -2,7 +2,12 @@
 
 ## Overview
 
+You have 2 systems a and  want to compare if a ligand binds in different places? 
 This tool performs comparative analysis of docking results from Wild-Type (WT) and Mutant protein systems. It aligns all structures, identifies overlapping ligand poses based on RMSD criteria, and generates visualization-ready PDB files for structural comparison.
+
+### Chimerax Visualization of 2 outputs: all ligands in transparent, UNIQUE LIGANDS for WT in blue, UNIQUE ligand for mutant in green
+![All ligands transparent](images/all_ligands_transparent.png)
+
 
 ## Features
 
@@ -40,6 +45,7 @@ The script expects PDB structures organized in the following directory structure
 │   └── structure2.pdb
 └── ...
 ```
+or modify yout path to a folder where pdbs structure are.
 
 ## Usage
 
@@ -58,8 +64,8 @@ The script performs the following steps:
 
 1. **Load Structures**: Reads all PDB files from specified directories
 2. **Structural Alignment**: Superimposes all structures on CU atoms (customizable)
-3. **Generate Combined PDB**: Creates visualization file with all ligands
-4. **Filter Overlaps**: Removes poses with RMSD < threshold
+3. **Generate Combined PDB**: Creates visualization file with all ligands of both systems. See images (all_ligands.png)
+4. **Filter Overlaps**: Removes poses with RMSD < threshold. Note that you can modify the condition; if you need to know if ligands are in the same place for both systems just change RMSD > threshold. See images/non_overlapping.png
 5. **Export Results**: Saves filtered structure set
 
 ### 3. Adjust Parameters
@@ -90,6 +96,21 @@ alignment_selection = "resname CU"
 - Only non-overlapping ligands (RMSD > threshold)
 - Maintains chain identifiers (W/M)
 - Optimized for clear visualization of distinct binding modes
+
+## Results Visualization
+
+### Before filtering - All ligand poses
+![All ligands](images/all_ligands.png)
+
+### After filtering - Non-overlapping poses only  
+![Filtered ligands](images/non_overlapping.png)
+
+### Chain identification for visualization
+- **Chain W (WT)**: Blue ligands
+![WT ligands](images/chainW.jpg)
+
+- **Chain M (Mutant)**: Green ligands  
+![Mutant ligands](images/chainM.png)
 
 ## Visualization
 
