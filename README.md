@@ -183,7 +183,7 @@ color chain M green
 ## Citation
 
 If you use this tool in your research, please cite:
-[Your publication details here]
+https://github.com/soniarote/Superposed-docking-analysis
 
 ## License
 
@@ -191,4 +191,4 @@ If you use this tool in your research, please cite:
 
 ## Contact
 
-[Your contact information]
+For any doubts or considerations please send an email to sromerte11@gmail.com
