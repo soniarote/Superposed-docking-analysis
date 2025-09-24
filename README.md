@@ -2,10 +2,10 @@
 
 ## Overview
 
-You have 2 systems a and  want to compare if a ligand binds in different places? 
+You have 2 systems and  want to compare if a ligand binds in different places? 
 This tool performs comparative analysis of docking results from Wild-Type (WT) and Mutant protein systems. It aligns all structures, identifies overlapping ligand poses based on RMSD criteria, and generates visualization-ready PDB files for structural comparison.
 
-### Chimerax Visualization of 2 outputs: all ligands in transparent, UNIQUE LIGANDS for WT in blue, UNIQUE ligand for mutant in green
+### Chimerax Visualization of 2 outputs: all ligands in transparent, UNIQUE  gandsfor WT in blue, UNIQUE ligands for mutant in green
 ![All ligands transparent](images/all_ligands_transparent.png)
 
 
